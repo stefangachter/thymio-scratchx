@@ -1843,7 +1843,7 @@ motor.right.target = event.args[0] \
 
     /**
      * Returns true if a given proximity sensor is greater than a  threshold
-     * @param {sound} number - Item of 'sensors' menu.
+     * @param {sensor} number - Item of 'sensors' menu.
      * @param {threshold} number - threshold
      */
     ext.touching_threshold = function(sensor, threshold) {
@@ -1903,16 +1903,16 @@ motor.right.target = event.args[0] \
             [" ", "play system sound %m.sounds", "A_sound_system", 1],
             [" ", "play note %n during %n s", "A_sound_freq", 440, 1],
             ["b", "touching %m.sensors", "touching", "front"],
-            ["b", "touching %m.sensors %n", "touching_threshold", "front"],
+            ["b", "touching %m.sensors %n", "touching_threshold", "front", 32],
             ["r", "proximity sensor %n", "proximity", 2],
             ["r", "proximity sensor %m.proxsensors", "proximity2", "front far left"],
             ["r", "ground sensor %n", "ground", 0],
-            ["b", "tap %n", "bump"],
+            ["b", "tap", "bump"],
             ["r", "tilt on %m.tilts", "tilt", "front-back"],
             ["R", "temperature", "temperature"],
             ["b", "sound detected", "sound_detected"],
             ["r", "sound level", "mic_intensity"],
-            ["h", "button %m.buttons", "button","center"]
+            ["h", "button %m.buttons", "button", "center"]
             /*,
             [" ", "motor %m.leftrightall %n", "scratch_motor", "left", 50],
             [" ", "leds next dial %m.leftright", "scratch_next_dial", "left"],
@@ -1960,11 +1960,11 @@ motor.right.target = event.args[0] \
             [" ", "jouer son système %m.sounds", "A_sound_system", 1],
             [" ", "jouer note %n pendant %n s", "A_sound_freq", 440, 1],
             ["b", "objet détecté %m.sensors", "touching", "devant"],
-            ["b", "objet détecté %m.sensors %n", "touching_threshold", "devant"],
+            ["b", "objet détecté %m.sensors %n", "touching_threshold", "devant", 32],
             ["r", "capteur horizontal %n", "proximity", 2],
             ["r", "capteur horizontal %m.proxsensors", "proximity2", "devant extrême gauche"],
             ["r", "capteur dessous %n", "ground", 0],
-            ["b", "choc %n", "bump"],
+            ["b", "choc", "bump"],
             ["r", "inclinaison %m.tilts", "tilt", "devant-derrière"],
             ["R", "température", "temperature"],
             ["b", "bruit", "sound_detected"],
@@ -2014,11 +2014,11 @@ motor.right.target = event.args[0] \
             [" ", "suona suono Thymio %m.sounds", "A_sound_system", 1],
             [" ", "suona nota %n per %n s", "A_sound_freq", 440, 1],
             ["b", "oggetto rilevato %m.sensors", "touching", "davanti"],
-            ["b", "oggetto rilevato %m.sensors %n", "touching_threshold", "davanti"],
+            ["b", "oggetto rilevato %m.sensors %n", "touching_threshold", "davanti", 32],
             ["r", "sensore prox. %n", "proximity", 2],
             ["r", "sensore prox. %m.proxsensors", "proximity2", "tutto a sinistra"],
             ["r", "sensore terreno %n", "ground", 0],
-            ["b", "urto %n", "bump"],
+            ["b", "urto", "bump"],
             ["r", "inclinazione %m.tilts", "tilt", "davanti-dietro"],
             ["R", "temperatura", "temperature"],
             ["b", "rumore captato", "sound_detected"],
@@ -2067,17 +2067,17 @@ motor.right.target = event.args[0] \
             [" ", "lösche alle Lampen", "scratch_clear_leds"],
             [" ", "spiele Geräusch %m.sounds", "A_sound_system", 1],
             [" ", "spiele Ton %n während %n s", "A_sound_freq", 440, 1],
-            ["b", "touching %m.sensors", "touching", "vorne"],
-            ["b", "touching %m.sensors %n", "touching_threshold", "vorne"],
-            ["r", "proximity sensor %n", "proximity", 2],
-            ["r", "proximity sensor %m.proxsensors", "proximity2", "vorne ganz links"],
-            ["r", "ground sensor %n", "ground", 0],
-            ["b", "tap %n", "bump"],
-            ["r", "tilt on %m.tilts", "tilt", "vorne-hinten"],
-            ["R", "temperature", "temperature"],
-            ["b", "sound detected", "sound_detected"],
-            ["r", "sound level", "mic_intensity"],
-            ["h", "button %m.buttons", "button", "mitte"]
+            ["b", "es hat ein Hindernis %m.sensors", "touching", "vorne"],
+            ["b", "es hat ein Hindernis %m.sensors bei %n", "touching_threshold", "vorne", 32],
+            ["r", "Wert vom Sensor %n", "proximity", 2],
+            ["r", "Wert vom Sensor %m.proxsensors", "proximity2", "vorne ganz links"],
+            ["r", "Wert vom Sensor %n unten", "ground", 0],
+            ["b", "Schock", "bump"],
+            ["r", "geneigt von %m.tilts", "tilt", "vorne nach hinten"],
+            ["R", "Temperatur", "temperature"],
+            ["b", "Geräusch detektiert", "sound_detected"],
+            ["r", "Wert vom Mikrofon", "mic_intensity"],
+            ["h", "Taste %m.buttons", "button", "mitte"]
             /*,
             [" ", "motor %m.leftrightall %n", "scratch_motor", "left", 50],
             [" ", "leds next dial %m.leftright", "scratch_next_dial", "left"],
@@ -2161,7 +2161,7 @@ motor.right.target = event.args[0] \
             angles: ["vorne", "hinten", "unten"],
             sounds: ["0", "1", "2", "3", "4", "5", "6", "7"],
             odo: ["Richtung", "x", "y"],
-            tilts: ["vorne-hinten", "oben-unten", "links-rechts"],
+            tilts: ["vorne nach hinten", "oben nach unten", "links nach rechts"],
             buttons: ["mitte", "vorne", "hinten", "links","rechts"]
         }
 
