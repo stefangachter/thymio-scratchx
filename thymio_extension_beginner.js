@@ -1945,7 +1945,7 @@ motor.right.target = event.args[0] \
             */
             ],
         fr: [
-            ["w", "avancer %n", "scratch_move", 50],
+            ["w", "test %n", "scratch_move", 50],
             ["w", "avancer %n avec vitesse %n", "scratch_move_with_speed", 50, 50],
             ["w", "avancer %n en %n s", "scratch_move_with_time", 50, 1],
             ["w", "tourner %n", "scratch_turn", 45],
