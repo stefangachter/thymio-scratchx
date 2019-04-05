@@ -2127,7 +2127,6 @@ motor.right.target = event.args[0] \
             odo: ["direction", "x", "y"],
             tilts: ["front-back", "top-bottom", "left-right"],
             buttons: ["center","front","back","left","right"]
-
         },
         fr: {
             leftrightall: ["gauche", "droite", "tous"],
@@ -2141,7 +2140,6 @@ motor.right.target = event.args[0] \
             odo: ["direction", "x", "y"],
             tilts: ["devant-derrière", "dessus-dessous", "gauche-droite à plat"],
             buttons: ["central","devant","derrière", "gauche", "droite"]
-
         },
         it: {
             leftrightall: ["sinistro", "destro", "tutti"],
@@ -2155,7 +2153,19 @@ motor.right.target = event.args[0] \
             odo: ["direzione", "x", "y"],
             tilts: ["davanti-dietro", "sopra-sotto", "sinistro-destro"],
             buttons: ["centrale","davanti","dietro","sinistra","destra"]
-
+        },
+        de: {
+            leftrightall: ["links", "rechts", "alle"],
+            leftright: ["links", "rechts"],
+            sensors: ["vorne", "hinten", "unten"],
+            proxsensors: ["vorne ganz links", "vorne links", "vorne mitte", "vorne rechts", "vorne ganz rechts", "hinten links", "hinten rechts"],
+            singlelight: ["oben", "unten links", "unten rechts"],
+            light: ["alle", "oben", "unten", "unten links", "unten rechts"],
+            angles: ["vorne", "hinten", "unten"],
+            sounds: ["0", "1", "2", "3", "4", "5", "6", "7"],
+            odo: ["Richtung", "x", "y"],
+            tilts: ["vorne-hinten", "oben-unten", "links-rechts"],
+            buttons: ["mitte","vorne","hinten","links","rechts"]
         }
 
     };
