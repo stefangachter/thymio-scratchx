@@ -1,4 +1,4 @@
-	test (50):: motion
+	avancer (50):: motion
 
 	avancer (10) avec vitesse (50) :: motion
 
