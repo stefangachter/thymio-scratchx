@@ -2054,10 +2054,64 @@ motor.right.target = event.args[0] \
             
             ["r", "colore LED %m.singlelight", "leds", "sopra"],
             ["r", "isometria %m.odo", "odo", "direzione"],*/
-            
-            
-            
-        ]
+        ],
+        de: [
+            ["w", "fahre %n ", "scratch_move", 50],
+            ["w", "fahre %n mit Geschwindigkeit %n", "scratch_move_with_speed", 50, 50],
+            ["w", "fahre %n in %n s", "scratch_move_with_time", 50, 1],
+            ["w", "drehe um %n", "scratch_turn", 45],
+            ["w", "drehe um %n mit Geschwindigkeit %n", "scratch_turn_with_speed", 90,50],
+            ["w", "drehe um %n in %n s", "scratch_turn_with_time", 90,1],
+            ["w", "mache einen Bogen mit Radius %n und Winkel %n", "scratch_arc", 150, 45],
+            [" ", "stoppe die Motoren", "scratch_stop"],
+            [" ", "setze Lampen %m.light auf Farbe %n", "scratch_set_leds", 0, "all"],
+            [" ", "wechsle Farbe der Lampen %m.light auf %n", "scratch_change_leds", 0, "all"],
+            [" ", "setze Lampen %m.light auf Farbe RGB %n %n %n", "scratch_leds", "all", 0, 0, 32],
+            [" ", "lösche alle Lampen", "scratch_clear_leds"],
+            [" ", "spiele Geräusch %m.sounds", "A_sound_system", 1],
+            [" ", "play note %n during %n s", "A_sound_freq", 440, 1],
+            ["b", "touching %m.sensors", "touching", "front"],
+            ["b", "touching %m.sensors %n", "touching_threshold", "front"],
+            ["r", "proximity sensor %n", "proximity", 2],
+            ["r", "proximity sensor %m.proxsensors", "proximity2", "front far left"],
+            ["r", "ground sensor %n", "ground", 0],
+            ["b", "tap %n", "bump"],
+            ["r", "tilt on %m.tilts", "tilt", "front-back"],
+            ["R", "temperature", "temperature"],
+            ["b", "sound detected", "sound_detected"],
+            ["r", "sound level", "mic_intensity"],
+            ["h", "button %m.buttons", "button","center"]
+            /*,
+            [" ", "motor %m.leftrightall %n", "scratch_motor", "left", 50],
+            [" ", "leds next dial %m.leftright", "scratch_next_dial", "left"],
+            [" ", "leds dial all %n %n %n %n %n %n %n %n", "V_leds_circle", 0, 8, 16, 32, 0, 8, 16, 32],
+            [" ", "play sound SD %n", "A_sound_play_sd", ""],
+            [" ", "record sound %n", "A_sound_record", ""],
+            [" ", "replay sound %n", "A_sound_replay", ""],
+            [" ", "odometer %n %n %n", "Q_set_odometer", 90, 0, 0],
+            [" ", "leds sensors h %n %n %n %n %n %n %n %n", "V_leds_prox_h", 0, 16, 32, 32, 16, 0, 32, 32],
+            [" ", "leds sensors v %n %n", "V_leds_prox_v", 32, 32],
+            [" ", "leds buttons %n %n %n %n", "V_leds_buttons", 16, 32, 16, 32],
+            [" ", "leds temperature %n %n", "V_leds_temperature", 32, 8],
+            [" ", "leds sound %n", "V_leds_sound", 32],
+            [" ", "leds rc %n", "V_leds_rc", 16],
+            [" ", "emit %n", "emit", 1],
+            ["r", "receive", "receive"],
+            ["R", "temperature", "temperature"],
+            ["r", "measure motor %m.leftright", "motor", "left"],
+            /* ["r", "motor %m.leftright speed", "motor_speed", "left" ],
+            ["r", "motor %m.leftright target", "motor_target", "left" ],*/
+           /*
+            ["r", "distance %m.sensors", "distance", "front"],
+            ["r", "angle %m.angles", "angle", "front"],
+            ["r", "proximity sensors", "prox_horizontal"],
+            ["r", "ground sensors", "prox_ground_delta"],
+            ["r", "leds color %m.light", "leds", "top"],
+            ["r", "odometer %m.odo", "odo", "direction"],
+            ["b", "object detected %m.sensors", "touching", "front"],
+            ["b", "object detected %m.sensors %n", "touching_threshold", "front"],
+            */
+            ]
     };
 
     var menus = {
