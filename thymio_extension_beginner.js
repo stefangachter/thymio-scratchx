@@ -1876,9 +1876,6 @@ motor.right.target = event.args[0] \
 
     };
 
-
-
-
     // Check for GET param 'lang'
     var paramString = window.location.search.replace(/^\?|\/$/g, '');
     var vars = paramString.split("&");
@@ -2064,23 +2061,23 @@ motor.right.target = event.args[0] \
             ["w", "drehe um %n in %n s", "scratch_turn_with_time", 90,1],
             ["w", "mache einen Bogen mit Radius %n und Winkel %n", "scratch_arc", 150, 45],
             [" ", "stoppe die Motoren", "scratch_stop"],
-            [" ", "setze Lampen %m.light auf Farbe %n", "scratch_set_leds", 0, "all"],
-            [" ", "wechsle Farbe der Lampen %m.light auf %n", "scratch_change_leds", 0, "all"],
-            [" ", "setze Lampen %m.light auf Farbe RGB %n %n %n", "scratch_leds", "all", 0, 0, 32],
+            [" ", "setze Lampen %m.light auf Farbe %n", "scratch_set_leds", 0, "alle"],
+            [" ", "wechsle Farbe der Lampen %m.light auf %n", "scratch_change_leds", 0, "alle"],
+            [" ", "setze Lampen %m.light auf Farbe RGB %n %n %n", "scratch_leds", "alle", 0, 0, 32],
             [" ", "lösche alle Lampen", "scratch_clear_leds"],
             [" ", "spiele Geräusch %m.sounds", "A_sound_system", 1],
             [" ", "play note %n during %n s", "A_sound_freq", 440, 1],
-            ["b", "touching %m.sensors", "touching", "front"],
-            ["b", "touching %m.sensors %n", "touching_threshold", "front"],
+            ["b", "touching %m.sensors", "touching", "vorne"],
+            ["b", "touching %m.sensors %n", "touching_threshold", "vorne"],
             ["r", "proximity sensor %n", "proximity", 2],
-            ["r", "proximity sensor %m.proxsensors", "proximity2", "front far left"],
+            ["r", "proximity sensor %m.proxsensors", "proximity2", "vorne ganz links"],
             ["r", "ground sensor %n", "ground", 0],
             ["b", "tap %n", "bump"],
-            ["r", "tilt on %m.tilts", "tilt", "front-back"],
+            ["r", "tilt on %m.tilts", "tilt", "vorne-hinten"],
             ["R", "temperature", "temperature"],
             ["b", "sound detected", "sound_detected"],
             ["r", "sound level", "mic_intensity"],
-            ["h", "button %m.buttons", "button","center"]
+            ["h", "button %m.buttons", "button", "mitte"]
             /*,
             [" ", "motor %m.leftrightall %n", "scratch_motor", "left", 50],
             [" ", "leds next dial %m.leftright", "scratch_next_dial", "left"],
@@ -2165,7 +2162,7 @@ motor.right.target = event.args[0] \
             sounds: ["0", "1", "2", "3", "4", "5", "6", "7"],
             odo: ["Richtung", "x", "y"],
             tilts: ["vorne-hinten", "oben-unten", "links-rechts"],
-            buttons: ["mitte","vorne","hinten","links","rechts"]
+            buttons: ["mitte", "vorne", "hinten", "links","rechts"]
         }
 
     };
